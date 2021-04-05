@@ -1,4 +1,3 @@
-<p align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="100" src="https://4imageupload.com/demo-image/image-uploader-icon.png" alt="4imageupload logo"></a></p>
 <h3 align="center">
     4 Image Upload is a free javascript framework that handle almost everything about image upload
     on client-side and really simple to use and install with many unique features and customize easily.

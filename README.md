@@ -28,7 +28,7 @@
 <div>
 <h2>Configuration</h2>
 <div>
-    See full list of configurable options here: https://4imageupload.com/#configuration-option
+    See full list of configurable options here: https://4imageupload.com/#configuration
 <div>
 
 ## License

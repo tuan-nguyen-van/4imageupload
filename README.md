@@ -3,7 +3,7 @@
     on client-side and really simple to use and install with many unique features and customize easily.
 <h3>
     
-<p align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="100%" src="https://raw.githubusercontent.com/4imageupload/4imageupload/main/public/demo-image/demo-for-git.png" alt="4imageupload demo image"></a></p>
+<p align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="100%" src="https://raw.githubusercontent.com/4imageupload/4imageupload/main/public/demo-image/demo-for-git2.png" alt="4imageupload demo image"></a></p>
 
 | Features | Description |
 |--------|-------------|

@@ -20,15 +20,15 @@
 
 <h2>Theming</h2>
 <div">
-    Visit http://laravel.site/#theming-section then choose the theme that you like then download it.
+    Visit https://4imageupload.com/#theming-section then choose the theme that you like then download it.
 <div>
 <h2>Installation</h2>
 <div>
-    Check the document here to see how to install 4imageupload on both front-end and back-end http://laravel.site/#installation
+    Check the document here to see how to install 4imageupload on both front-end and back-end https://4imageupload.com/#installation
 <div>
 <h2>Configuration</h2>
 <div>
-    See full list of configurable options here: http://laravel.site/#configuration-option
+    See full list of configurable options here: https://4imageupload.com/#configuration-option
 <div>
 
 ## License

@@ -1,0 +1,234 @@
+.iu-image-item-style {
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.iu-highlight {
+    border: 2px dashed #ff1a1a !important;
+}
+
+.iu-image-note {
+    font-size: 1rem;
+    color: black;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.iu-image-placeholder {
+    margin-bottom: 0px;
+    display: block;
+    padding: 2px;
+    background-clip: content-box;
+    position: relative;
+}
+
+.iu-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.iu-image-order-number {
+    position:absolute;
+    top: 2px;
+    left: 2px;
+    color: white;
+    font-size: 1rem;
+    background: rgba(0,0,0,.3);
+    padding:2px 8px;
+}
+
+.iu-close-button {
+    position:absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    background: rgba(0,0,0,.3);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iu-close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.iu-close-button:hover {
+    background: rgba(0,0,0,.5);
+}
+
+.iu-button {
+    display: none;
+}
+
+@keyframes  iu-backgroundColor {
+    0% {background-color: #c0b3a5;}
+    50% {background-color: #a18d78;}
+    100% {background-color: #c0b3a5;}
+}
+
+.iu-select-number {
+    width: 100%;
+}
+
+.iu-custom-select {
+    position: relative;
+    padding: 2px;
+    margin-top: -4px;
+    font-size: 1rem;
+}
+
+.iu-display-none {
+    display: none;
+}
+
+.iu-select-selected {
+    background-color: DodgerBlue;
+}
+
+.iu-select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(0, calc(-50% + 3px));
+    right: calc(10px + 2px);
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.iu-select-hide {
+    display: none;
+}
+
+.iu-select-selected.iu-select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    transform: translate(0, calc(-50% - 3px));
+}
+
+/* style the items (options), including the selected item: */
+.iu-select-items div,.iu-select-selected {
+    color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.iu-select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-clip: content-box;
+    padding: 0 2px;
+}
+
+.iu-select-items div:hover, .iu-same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.iu-image-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+#iu-image-upload-zone {
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.iu-image-note {
+    padding: 5px;
+}
+.iu-image-note:hover {
+    background-color: #e3e0d3;
+    border-radius: 10px;
+}
+.iu-progress-bar {
+    width: 75%;
+    background-color: #8f8877;
+    border-radius: 15px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.iu-percent-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.iu-flash-box {
+    position: fixed;
+    z-index: 2000;
+    color: #ffffff;
+    background: rgba(37,34,74,.9);
+}
+
+@media (max-width: 450px) {
+    .iu-flash-box {
+        padding: 20px 20px;
+        animation: MoveDown 0.2s linear;
+        top: 0px;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+}
+
+@keyframes  MoveDown {
+  0%{
+    margin-top: -54px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+
+@media (min-width: 451px) {
+    .iu-flash-box {
+        animation: MoveLeft 0.2s linear;
+        padding: 10px 30px;
+        max-width: 50%;
+        bottom: 10px;
+        right: 10px;
+        border-radius: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes  MoveLeft {
+  0%{
+    margin-right: -50%;
+  }
+  100% {
+    margin-right: 10px;
+  }
+}

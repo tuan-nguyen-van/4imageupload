@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+<title></title>
+<link rel="stylesheet" href="4image-upload.css">
+</head>
+<body>
+<style>
+    #image-upload-demo {
+        width: 100%;
+        margin: auto;
+    }
+</style>
+<h2 style="text-align: center;">Test demo freely all the way you want</h2>
+
+<div id="image-upload-demo">
+<div id="iu-gallery"></div>
+<div class="" style="display: inline-block; margin-right: 10px;">
+    Other stuff
+</div>
+<div id="iu-image-upload-zone"></div>
+<div class="" style="display: inline-block">
+    Other stuff
+</div>
+</div>
+
+<script src="4image-upload.js"></script>
+
+<script id="jsNeedToCopy">
+//Detect Internet Explorer. Show alert to customer.
+if (window.document.documentMode) {
+    alert("This website doesn't work on Internet Explorer, you should use modern browsers like Chrome or Safari instead");
+}
+var myImageUpload = new ImageUpload({
+imageUploadZoneId: 'iu-image-upload-zone',
+imageGalleryId: 'iu-gallery',
+sendRequestToServer: false,
+
+
+
+dragAndDropFeature: false,
+dictUploadImageNote: '<img src="/demo-image/image-icon.png" class="iu-image-icon">Add photos',
+showUploadingLoader: function(imagePlaceholder, showUploadedPercentComplete) {
+    var progressBar = document.createElement('div');
+    progressBar.className = 'iu-progress-bar';
+    var percentBar = document.createElement('div');
+    percentBar.className = 'iu-percent-bar';
+    if (showUploadedPercentComplete === true) {
+        percentBar.innerHTML = '0%';
+    }
+    progressBar.appendChild(percentBar);
+    imagePlaceholder.appendChild(progressBar);
+},
+updateUploadingLoader: function(percentComplete, imagePlaceholder, showUploadedPercentComplete) {
+    var percentComplete = Math.floor(percentComplete);
+    var percentBar = imagePlaceholder.getElementsByClassName('iu-percent-bar')[0];
+
+    if (percentBar != null) {
+        percentBar.style.width = percentComplete + "%";
+        if (showUploadedPercentComplete === true) {
+            percentBar.innerHTML = percentComplete  + "%";
+        }
+    }
+},
+removeUploadingLoader: function(imagePlaceholder, showUploadedPercentComplete) {
+    var progressBar = imagePlaceholder.getElementsByClassName('iu-progress-bar')[0];
+    var fadeEffect = setInterval(function() {
+        if (!progressBar.style.opacity) {
+            progressBar.style.opacity = 1;
+        }
+        if (progressBar.style.opacity > 0) {
+            progressBar.style.opacity -= 0.1;
+        } else {
+            clearInterval(fadeEffect);
+            progressBar.remove();
+        }
+    }, 300);
+},
+
+addFlashBox: function(showedAlertString, showedTime, backgroundColor) {
+    var oldFlashBox = document.getElementsByClassName('iu-flash-box')[0];
+    if (oldFlashBox) {
+        oldFlashBox.remove();
+    }
+    var flashBox = document.createElement('div');
+    flashBox.className = 'iu-flash-box';
+    if (backgroundColor) {
+        flashBox.style.backgroundColor = backgroundColor;
+    }
+    flashBox.innerHTML = showedAlertString;
+    document.body.appendChild(flashBox);
+    setTimeout(function(){
+        fadeEffect(flashBox);
+    }, showedTime);
+
+    function fadeEffect(elmnt) {
+        var fadeEffect = setInterval(function () {
+            if (!elmnt.style.opacity) {
+                elmnt.style.opacity = 1;
+            }
+            if (elmnt.style.opacity > 0) {
+                elmnt.style.opacity -= 0.1;
+            } else {
+                clearInterval(fadeEffect);
+                elmnt.remove();
+            }
+        }, 50);
+    }
+},
+
+});
+</script>
+
+</body>
+</html>

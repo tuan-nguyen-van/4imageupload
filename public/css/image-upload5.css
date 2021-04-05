@@ -1,0 +1,218 @@
+.iu-image-item-style {
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.iu-highlight {
+    border: 2px dashed #ff1a1a !important;
+}
+
+.iu-image-note {
+    font-size: 1rem;
+    color: black;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.iu-image-placeholder {
+    margin-bottom: 0px;
+    display: block;
+    object-fit: cover;
+    padding: 2px;
+    background-clip: content-box;
+}
+
+.iu-image-order-number {
+    position:absolute;
+    top: 2px;
+    left: 2px;
+    color: white;
+    font-size: 1.1rem;
+    background: rgba(0,0,0,.3);
+    padding:2px 8px;
+}
+
+.iu-close-button {
+    position:absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    background: rgba(0,0,0,.3);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iu-close-icon {
+    position: relative;
+    bottom: 2px;
+}
+
+.iu-close-button:hover {
+    background: rgba(0,0,0,.5);
+}
+
+.iu-button {
+    display: none;
+}
+
+/* Could remove for customize */
+/* Spinner for image upload note */
+.iu-spinner {
+  /* border: 5px solid #bfb1a4; */
+  border-top: 5px solid #3498db;
+  border-right: 5px solid #3498db;
+  border-bottom: 5px solid #52a7e0;
+  border-left: 5px solid #67b2e4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: iu-spin 700ms linear infinite;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Could remove for customize */
+@keyframes iu-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes iu-backgroundColor {
+  0% {background-color: #c0b3a5;}
+  50% {background-color: #a18d78;}
+  100% {background-color: #c0b3a5;}
+}
+
+.iu-select-number {
+    width: 100%;
+}
+
+.iu-custom-select {
+  position: relative;
+  padding: 2px;
+  margin-top: -4px;
+  font-size: 1rem;
+}
+
+.iu-display-none {
+  display: none; /*hide original SELECT element: */
+}
+
+.iu-select-selected {
+  background-color: DodgerBlue;
+}
+
+.iu-select-selected:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.iu-select-hide {
+  display: none;
+}
+
+.iu-select-selected.iu-select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.iu-select-items div,.iu-select-selected {
+  color: #ffffff;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.iu-select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-clip: content-box;
+  padding: 0 2px;
+}
+
+.iu-select-items div:hover, .iu-same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.iu-flash-box {
+    position: fixed;
+    z-index: 2000;
+    color: #ffffff;
+}
+
+@media (max-width: 450px) {
+    .iu-flash-box {
+        padding: 15px 15px;
+        animation: MoveDown 0.2s linear;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        background: rgba(0,0,0,.9);
+    }
+}
+
+@keyframes MoveDown {
+  0%{
+    margin-top: -54px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+
+@media (min-width: 451px) {
+    .iu-flash-box {
+        animation: MoveLeft 0.2s linear;
+        padding: 7px 15px;
+        max-width: 50%;
+        bottom: 10px;
+        right: 10px;
+        border-radius: 15px;
+        background-color: #25224a;
+        opacity: 1;
+    }
+}
+
+@keyframes MoveLeft {
+  0%{
+    margin-right: -50%;
+  }
+  100% {
+    margin-right: 10px;
+  }
+}
+
+
+/* Could remove for customize */
+.iu-progress-spinner {
+    border-top: 6px solid #0099ff;
+    border-right: 6px solid #38afff;
+    border-bottom: 6px solid #38afff;
+    border-left: 6px solid #38afff;
+    border-radius: 50%;
+    margin: 0;
+    animation: iu-spin 700ms linear infinite;
+    position: absolute;
+}
+
+/* Could remove for customize */

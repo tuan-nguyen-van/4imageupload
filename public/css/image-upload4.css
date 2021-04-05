@@ -1,0 +1,193 @@
+.iu-image-item-style {
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+}
+.iu-highlight {
+    border: 2px dashed #ff1a1a !important;
+}
+.iu-image-note {
+    font-size: 1rem;
+    color: black;
+    z-index: 9;
+    font-size: 16px;
+    cursor: pointer;
+}
+.iu-image-placeholder {
+    margin-bottom: 0px;
+    display: block;
+    object-fit: cover;
+    padding: 1px 1px 1px 1px;
+    background-clip: content-box;
+    animation: iu-backgroundColor 2000ms linear infinite;
+}
+
+.iu-image-order-number {
+    position:absolute;
+    top: 1px;
+    left: 1px;
+    color: white;
+    font-size: 1.1rem;
+    background: rgba(0,0,0,.3);
+    padding:2px 8px;
+}
+.iu-close-button {
+    position:absolute;
+    top: 1px;
+    right: 1px;
+    color: white;
+    background: rgba(0,0,0,.3);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iu-close-icon {
+    position: relative;
+    bottom: 2px;
+}
+
+.iu-close-button:hover {
+    background: rgba(0,0,0,.5);
+}
+.iu-image-upload {
+    position: relative;
+}
+.iu-button {
+    display: none;
+}
+.iu-spinner {
+  /* border: 5px solid #bfb1a4; */
+  border-top: 5px solid #3498db;
+  border-right: 5px solid #3498db;
+  border-bottom: 5px solid #52a7e0;
+  border-left: 5px solid #67b2e4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: iu-spin 700ms linear infinite;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@keyframes iu-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes iu-backgroundColor {
+  0% {background-color: #c0b3a5;}
+  50% {background-color: #a18d78;}
+  100% {background-color: #c0b3a5;}
+}
+
+.iu-select-number {
+    width: 100%;
+}
+.iu-custom-select {
+  position: relative;
+  padding: 1px 1px 1px 1px;
+  margin-top: -2px;
+  font-size: 1rem;
+}
+.iu-display-none {
+  display: none; /*hide original SELECT element: */
+}
+.iu-select-selected {
+  background-color: DodgerBlue;
+}
+.iu-select-selected:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.iu-select-hide {
+  display: none;
+}
+.iu-select-selected.iu-select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.iu-select-items div,.iu-select-selected {
+  color: #ffffff;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/* Style items (options): */
+.iu-select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.iu-select-items div:hover, .iu-same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.iu-flash-box {
+    max-width: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    z-index: 2000;
+    color: #ffffff;
+    border-radius: 10%;
+}
+.iu-progress-bar {
+    width: 75%;
+    background-color: #8f8877;
+    border-radius: 5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.iu-percent-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.iu-progress-spinner {
+    border-top: 10px solid #3498db;
+    border-right: 10px solid #3498db;
+    border-bottom: 10px solid #52a7e0;
+    border-left: 10px solid #67b2e4;
+    border-radius: 50%;
+    margin: 0;
+    animation: iu-spin 700ms linear infinite;
+    position: absolute;
+}
+
+.iu-percent-div {
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    min-width: 60px;
+    text-align: center;
+}

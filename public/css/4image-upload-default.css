@@ -1,0 +1,137 @@
+.iu-image-item-style {
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.iu-highlight {
+    border: 2px dashed #ff1a1a !important;
+}
+
+.iu-image-note {
+    font-size: 1rem;
+    color: black;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.iu-image-placeholder {
+    margin-bottom: 0px;
+    display: block;
+    padding: 2px;
+    background-clip: content-box;
+    position: relative;
+}
+
+.iu-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.iu-image-order-number {
+    position:absolute;
+    top: 2px;
+    left: 2px;
+    color: white;
+    font-size: 1rem;
+    background: rgba(0,0,0,.3);
+    padding:2px 8px;
+}
+
+.iu-close-button {
+    position:absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    background: rgba(0,0,0,.3);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iu-close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.iu-close-button:hover {
+    background: rgba(0,0,0,.5);
+}
+
+.iu-button {
+    display: none;
+}
+
+@keyframes iu-backgroundColor {
+0% {background-color: #c0b3a5;}
+50% {background-color: #a18d78;}
+100% {background-color: #c0b3a5;}
+}
+
+.iu-select-number {
+    width: 100%;
+}
+
+#iu-gallery-default .iu-custom-select {
+    position: relative;
+    padding: 2px;
+    margin-top: -4px;
+    font-size: 1rem;
+}
+
+.iu-display-none {
+    display: none;
+}
+
+#iu-image-upload-zone-default {
+    text-align: center;
+    font-weight: 600;
+    position: absolute!important;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.iu-image-note {
+    font-size: 16px !important;
+}
+
+#iu-gallery-default {
+    padding-bottom: 34px;
+    width: 100%;
+    border: 2px dashed #a7a6ab;
+    min-height: 150px;
+    background-color: #fff;
+}
+
+#iu-gallery-default:hover {
+    border: 2px dashed #17a2b8 !important;
+}
+.iu-progress {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

@@ -1,0 +1,86 @@
+.horizon-line {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+/* prevent open bootstrap modal create padding-right for body element. */
+body.modal-open {
+    overflow: auto !important;
+}
+
+body, #sidebar {
+    background-color: #000000 !important;
+}
+
+.content-block {
+    background-color: #121111;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-radius: 0.75rem;
+}
+.theme-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+.buy-now {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.buy-now button {
+    background: #ffc439;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    padding: 5px 20px;
+    outline: none!important;
+}
+.section-title {
+    font-size: 2rem;
+    color: #17a2b8!important;
+    margin-top: 3rem;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    color: #17a2b8!important;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-guide {
+    font-size: 1.2rem;
+    color: #8c5c58;
+    margin-top: 1rem;
+}
+.trigger-collapse {
+    cursor: pointer;
+}
+.trigger-collapse:hover {
+    cursor: pointer;
+}
+.fa-caret-down {
+    font-size: 1.3rem;
+}
+
+#option-table tr td:first-child{
+    color: #e31243;
+}
+
+.download-button {
+    background-color: #ffc439;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+.download-button:hover {
+    opacity: 0.9;
+}
+.donate-input-and-button {
+    border-radius: 25px!important;
+}

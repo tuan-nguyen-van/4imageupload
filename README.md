@@ -3,9 +3,9 @@
     on client-side and really simple to use and install with many unique features and customize easily.
 <h3>
     
-<p align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="80%" src="https://raw.githubusercontent.com/4imageupload/4imageupload/main/public/demo-image/demo-for-git2.png" alt="4imageupload demo image"></a></p>
+<div align="center" style="display: inline-block"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="70%" src="https://raw.githubusercontent.com/4imageupload/4imageupload/main/public/demo-image/demo-for-git2.png" alt="4imageupload demo image"></a></div>
 
-<p align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="50%" src="https://github.com/4imageupload/4imageupload/blob/main/public/demo-image/demo-image-git3.jpg?raw=true" alt="4imageupload demo image"></a></p>
+<div align="center" style="display: inline-block"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="40%" src="https://github.com/4imageupload/4imageupload/blob/main/public/demo-image/demo-image-git3.jpg?raw=true" alt="4imageupload demo image"></a></div>
 
 | Features | Description |
 |--------|-------------|

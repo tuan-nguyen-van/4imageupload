@@ -5,7 +5,7 @@
     
 <div align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="80%" src="https://raw.githubusercontent.com/4imageupload/4imageupload/main/public/demo-image/demo-for-git2.png" alt="4imageupload demo image"></a></div>
 
-<div align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="40%" src="https://github.com/4imageupload/4imageupload/blob/main/public/demo-image/demo-image-git3.jpg?raw=true" alt="4imageupload demo image"></a></div>
+<div align="center"><a href="https://4imageupload.com" target="_blank" rel="noopener noreferrer"><img width="40%" src="https://github.com/4imageupload/4imageupload/blob/main/public/demo-image/demo-image-git4.jpg?raw=true" alt="4imageupload demo image"></a></div>
 
 | Features | Description |
 |--------|-------------|
